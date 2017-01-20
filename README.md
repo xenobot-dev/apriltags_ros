@@ -5,7 +5,7 @@ ubuntu16.04 ROS kinetic
 
 #Demo videos
 
-[![apriltags_detections](https://github.com/xenobot-dev/apriltags_ros/blob/master/software/apriltags_launch.png](https://youtu.be/dY6OzeA6rb4)
+[![apriltags_detections](https://github.com/xenobot-dev/apriltags_ros/blob/master/software/apriltags_launch.png)](https://youtu.be/dY6OzeA6rb4)
 
 ##Installation
 
