@@ -9,6 +9,9 @@ ubuntu16.04 ROS kinetic
 
 ##Installation
 
+PreInstall
+sudo apt-get --yes install libcgal-qt5-dev libcgal-dev  # for pr apriltags
+
 ###1.apriltags-cpp 
 Building
 ========
