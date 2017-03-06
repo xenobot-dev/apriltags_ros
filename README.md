@@ -10,7 +10,13 @@ ubuntu16.04 ROS kinetic
 ##Installation
 
 PreInstall
+
+###for ubuntu16.04
 sudo apt-get --yes install libcgal-qt5-dev libcgal-dev  # for pr apriltags
+
+###for ubuntu14.04
+sudo apt-get --yes install libcgal-dev  # for pr apriltags
+
 
 ###1.apriltags-cpp 
 Building
@@ -26,6 +32,7 @@ To compile the code,
     cd build
     cmake .. -DCMAKE_BUILD_TYPE=Release
     make
+    sudo make install
 ```
 Demo/utility programs
 
