@@ -1,24 +1,36 @@
-# apriltags_ros
+apriltags_ros
+===
 apriltags ros package for usb camera detection
 
 ubuntu16.04 ROS kinetic 
 
-#Demo videos
-
+Demo videos 1
+===
+aprilTag detection ros wrapper
 [![apriltags_detections](https://github.com/xenobot-dev/apriltags_ros/blob/master/software/apriltags_launch.png)](https://youtu.be/dY6OzeA6rb4)
 
-##Installation
+Demo videos 2
+===
+add aprilTag simulation 
+[![tb3_gazebo](https://github.com/YuehChuan/tb3_aprilTag/blob/master/misc/tb3_gazebo.png)](https://turtlebot3.readthedocs.io/en/latest/simulation.html)
+
+**Source**
+https://github.com/YuehChuan/tb3_aprilTag
+
+
+Installation
+===
 
 PreInstall
 
-###for ubuntu16.04
+**for ubuntu16.04**
 sudo apt-get --yes install libcgal-qt5-dev libcgal-dev  # for pr apriltags
 
-###for ubuntu14.04
+**for ubuntu14.04**
 sudo apt-get --yes install libcgal-dev  # for pr apriltags
 
 
-###1.apriltags-cpp 
+**1.apriltags-cpp** 
 Building
 ========
 
@@ -34,11 +46,10 @@ To compile the code,
     make
     sudo make install
 ```
-Demo/utility programs
+How to Fly
+========
 
-=====================
-
-###2.apriltags ROS packages
+**2.apriltags ROS packages**
 ```
     cd ~/apriltags_ros/apriltags_ws
     source environment.sh
@@ -46,7 +57,8 @@ Demo/utility programs
     source environment.sh
 ```
 
-##Usage
+Usage
+========
 Print out tag36h11.pdf  in apriltags_ros/software/  with your desire size.
 
 edit tag size in  apriltags_ros/apriltags_ws/src/launch/usb_cam_apriltags.launch
@@ -69,10 +81,14 @@ ex:
 
 Open 4 terminal shows like this, you can utilize byobu tool.
 
-T1: `roslaunch usb_cam usb_cam-test.launch`
+**Terminal1:**
+`roslaunch usb_cam usb_cam-test.launch`
 
-T2: `roslaunch apriltags usb_tag.launch`
+**Terminal2:**
+`roslaunch apriltags usb_tag.launch`
 
-T3: `rostopic echo /apriltags/detections`
+**Terminal3:**
+`rostopic echo /apriltags/detections`
 
-T4: `rosrun image_view image_view image:=/usb_cam/image_raw`
+**Terminal4:**
+`rosrun image_view image_view image:=/usb_cam/image_raw`
