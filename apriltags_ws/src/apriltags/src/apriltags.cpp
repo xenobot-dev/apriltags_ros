@@ -111,7 +111,7 @@ void GetMarkerTransformUsingOpenCV(const TagDetection& detection, Eigen::Matrix4
     image_pts.push_back(detection.p[2]);
     image_pts.push_back(detection.p[3]);
 
-    cv::Matx33f intrinsics(camera_info_.K[0], 0, camera_info_.K[2],
+    cv::Matx33d intrinsics(camera_info_.K[0], 0, camera_info_.K[2],
                            0, camera_info_.K[4], camera_info_.K[5],
                            0, 0, 1);
     

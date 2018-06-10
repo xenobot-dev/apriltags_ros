@@ -85,7 +85,7 @@ Open 4 terminal shows like this, you can utilize byobu tool.
 `roslaunch usb_cam usb_cam-test.launch`
 
 **Terminal2:**
-`roslaunch apriltags usb_tag.launch`
+`roslaunch apriltags usb_cam_apriltags.launch`
 
 **Terminal3:**
 `rostopic echo /apriltags/detections`
